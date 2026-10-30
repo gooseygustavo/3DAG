@@ -15,6 +15,7 @@ Material:
   m_InvalidKeywords:
   - _BOTTOM_DISTORT
   - _CAUSTICS_ON
+  - _CRESTGLOW_ON
   - _FOAM_ON
   - _GERSTNERWAVE_ON
   - _NORMALPERTURB_ON
