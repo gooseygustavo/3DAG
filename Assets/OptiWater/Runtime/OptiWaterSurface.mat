@@ -59,7 +59,7 @@ Material:
     - _AlphaSlopeSampleDist: 0.62
     - _B_Amplitude: 0.5
     - _B_Frequency: 0.45
-    - _BottomDistort: 0
+    - _BottomDistort: 1
     - _BottomDistortDepth: 3
     - _BottomDistortSpeed: 0.115
     - _BottomDistortStrength: 0.0123
