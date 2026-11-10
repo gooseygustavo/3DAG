@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5977596921075205970}
   - component: {fileID: 4962404031408624332}
+  - component: {fileID: 8809475761355266978}
   m_Layer: 0
   m_Name: Rock_B
   m_TagString: Untagged
@@ -166,3 +167,24 @@ LODGroup:
     - renderer: {fileID: 9046371682350474460}
   m_Enabled: 1
   m_GlobalIlluminationLOD: 0
+--- !u!65 &8809475761355266978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8939889959042086964}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.51, y: 0.35, z: 0.58}
+  m_Center: {x: 0, y: 0.14, z: 0.1}

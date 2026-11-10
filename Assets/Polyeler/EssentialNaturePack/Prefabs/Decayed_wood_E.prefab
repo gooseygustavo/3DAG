@@ -123,6 +123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9195172662745274534}
   - component: {fileID: 7367047321788280916}
+  - component: {fileID: -8593326634140055940}
   m_Layer: 0
   m_Name: Decayed_wood_E
   m_TagString: Untagged
@@ -166,3 +167,26 @@ LODGroup:
     - renderer: {fileID: 1322319170285678132}
   m_Enabled: 1
   m_GlobalIlluminationLOD: 0
+--- !u!136 &-8593326634140055940
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8085966203867175263}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.54
+  m_Height: 1.9
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
