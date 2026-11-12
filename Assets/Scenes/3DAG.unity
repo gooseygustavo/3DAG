@@ -603,43 +603,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e3f291ded0286c4fa7339e0caa2c4a4, type: 3}
---- !u!84 &53549893
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: OptiWaterPlanarReflectionRT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!4 &70430987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3271046438287773557, guid: 602ccec130b251d4c9c5fff1115837d1, type: 3}
@@ -1452,7 +1415,7 @@ GameObject:
   - component: {fileID: 230731392}
   - component: {fileID: 230731391}
   m_Layer: 0
-  m_Name: Point Light (6)
+  m_Name: HouseLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1560,12 +1523,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230731390}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2113623, z: -0, w: 0.9774078}
-  m_LocalPosition: {x: 317.905, y: 113.434, z: 60.736}
+  m_LocalRotation: {x: -0.9760922, y: -0.010962925, z: -0.21107781, w: -0.05069612}
+  m_LocalPosition: {x: 317.905, y: -104.11582, z: -23.443348}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 24.404, z: 0}
 --- !u!1001 &256263426
 PrefabInstance:
@@ -2297,7 +2260,7 @@ GameObject:
   - component: {fileID: 359334877}
   - component: {fileID: 359334876}
   m_Layer: 0
-  m_Name: LighthouseLighting (1)
+  m_Name: LighthouseLighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2494,43 +2457,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e3f291ded0286c4fa7339e0caa2c4a4, type: 3}
---- !u!84 &408090109
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: OptiWaterPlanarReflectionRT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 6
-  m_Width: 1024
-  m_Height: 1024
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 4
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 1
-  m_UseDynamicScale: 0
-  m_UseDynamicScaleExplicit: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!4 &412595011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 895289328901949187, guid: 1e3f291ded0286c4fa7339e0caa2c4a4, type: 3}
@@ -3996,8 +3922,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.15635803
-  far clip plane: 31271.607
+  near clip plane: 0.005
+  far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
   orthographic size: 5
@@ -4006,7 +3932,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 408090109}
+  m_TargetTexture: {fileID: 2125667241}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -4024,8 +3950,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723517121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1872252, y: -0, z: 0.98231494, w: 0.002034887}
-  m_LocalPosition: {x: 40.83847, y: -42.639122, z: -77.66932}
+  m_LocalRotation: {x: -0.84256124, y: -0, z: -0.49722964, w: 0.20701031}
+  m_LocalPosition: {x: 12.299652, y: -40.489876, z: -89.57329}
   m_LocalScale: {x: 1.0222999, y: 0.29900047, z: 1.0768527}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11433,7 +11359,7 @@ GameObject:
   - component: {fileID: 1106355016}
   - component: {fileID: 1106355015}
   m_Layer: 0
-  m_Name: Point Light (3)
+  m_Name: TreeLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11541,12 +11467,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106355014}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.9, y: 132.9, z: 288.382}
+  m_LocalRotation: {x: -0.998654, y: -0, z: -0, w: -0.05186793}
+  m_LocalPosition: {x: 86.9, y: -147.06036, z: -247.8479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108019465
 PrefabInstance:
@@ -12158,7 +12084,7 @@ GameObject:
   - component: {fileID: 1229604442}
   - component: {fileID: 1229604441}
   m_Layer: 0
-  m_Name: Point Light (2)
+  m_Name: TreeLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12204,8 +12130,8 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.29239577, g: 0.53029525, b: 0.6377357, a: 1}
-  m_Intensity: 5
-  m_Range: 15
+  m_Intensity: 15.65
+  m_Range: 165.6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -12266,12 +12192,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229604440}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 90.05, y: 103.46, z: 290.08}
+  m_LocalRotation: {x: -0.998654, y: -0, z: -0, w: -0.05186793}
+  m_LocalPosition: {x: 90.05, y: -117.95466, z: -252.58667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1231178800
 PrefabInstance:
@@ -13308,7 +13234,7 @@ GameObject:
   - component: {fileID: 1326869108}
   - component: {fileID: 1326869107}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: TreeLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13354,8 +13280,8 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.29239577, g: 0.53029525, b: 0.6377357, a: 1}
-  m_Intensity: 5
-  m_Range: 15
+  m_Intensity: 15.65
+  m_Range: 165.6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -13416,12 +13342,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326869106}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.29, y: 104.26, z: 285.23}
+  m_LocalRotation: {x: -0.998654, y: -0, z: -0, w: -0.05186793}
+  m_LocalPosition: {x: 85.29, y: -118.24793, z: -247.6799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1333810463 stripped
 Transform:
@@ -14429,6 +14355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5138060587546153782, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 8148515004539822373, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 327.338
@@ -15376,6 +15306,43 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!84 &1733213913
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OptiWaterPlanarReflectionRT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1743884105
 GameObject:
   m_ObjectHideFlags: 0
@@ -21694,7 +21661,7 @@ GameObject:
   - component: {fileID: 1883222398}
   - component: {fileID: 1883222397}
   m_Layer: 0
-  m_Name: Point Light (1)
+  m_Name: TreeLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21740,8 +21707,8 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.29239577, g: 0.53029525, b: 0.6377357, a: 1}
-  m_Intensity: 5
-  m_Range: 15
+  m_Intensity: 15.65
+  m_Range: 165.6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -21802,12 +21769,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883222396}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 88.74, y: 103.46, z: 285.23}
+  m_LocalRotation: {x: -0.998654, y: -0, z: -0, w: -0.05186793}
+  m_LocalPosition: {x: 88.74, y: -117.45223, z: -247.76276}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1883691604
 PrefabInstance:
@@ -22082,8 +22049,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.15635803
-  far clip plane: 31271.607
+  near clip plane: 0.005
+  far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
   orthographic size: 5
@@ -22092,7 +22059,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 53549893}
+  m_TargetTexture: {fileID: 1733213913}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -22110,8 +22077,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896104685}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1872252, y: -0, z: 0.98231494, w: 0.002034887}
-  m_LocalPosition: {x: 40.83847, y: -42.639122, z: -77.66932}
+  m_LocalRotation: {x: -0.84256124, y: -0, z: -0.49722964, w: 0.20701031}
+  m_LocalPosition: {x: 12.299652, y: -40.489876, z: -89.57329}
   m_LocalScale: {x: 0.0043766988, y: 0.067775354, z: 0.055959385}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27043,7 +27010,7 @@ GameObject:
   - component: {fileID: 1931037377}
   - component: {fileID: 1931037376}
   m_Layer: 0
-  m_Name: Point Light (5)
+  m_Name: HouseLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27151,12 +27118,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931037375}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2113623, z: -0, w: 0.9774078}
-  m_LocalPosition: {x: 316.421, y: 111.87, z: 57.466}
+  m_LocalRotation: {x: -0.9760922, y: -0.010962925, z: -0.21107781, w: -0.05069612}
+  m_LocalPosition: {x: 316.421, y: -102.22147, z: -20.352966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 24.404, z: 0}
 --- !u!1001 &1943901572
 PrefabInstance:
@@ -27382,6 +27349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5138060587546153782, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 8148515004539822373, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 327.798
@@ -27594,6 +27565,10 @@ PrefabInstance:
     - target: {fileID: 5138060587546153782, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
       propertyPath: m_Name
       value: Battery (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138060587546153782, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
+      propertyPath: m_TagString
+      value: pickup
       objectReference: {fileID: 0}
     - target: {fileID: 8148515004539822373, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27830,7 +27805,7 @@ GameObject:
   - component: {fileID: 2072548300}
   - component: {fileID: 2072548299}
   m_Layer: 0
-  m_Name: Point Light (4)
+  m_Name: HouseLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27938,12 +27913,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072548298}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.2113623, z: -0, w: 0.9774078}
-  m_LocalPosition: {x: 319.665, y: 111.87, z: 63.891}
+  m_LocalRotation: {x: -0.9760922, y: -0.010962925, z: -0.21107781, w: -0.05069612}
+  m_LocalPosition: {x: 319.665, y: -102.88708, z: -26.743397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2114283753834967213}
   m_LocalEulerAnglesHint: {x: 0, y: 24.404, z: 0}
 --- !u!4 &2085039387 stripped
 Transform:
@@ -32874,6 +32849,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6773238988558619434, guid: d6f226d39c561d94ba0cab51fe723f85, type: 3}
   m_PrefabInstance: {fileID: 2123428232}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &2125667241
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OptiWaterPlanarReflectionRT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 6
+  m_Width: 1024
+  m_Height: 1024
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 4
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 1
+  m_UseDynamicScale: 0
+  m_UseDynamicScaleExplicit: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!4 &2139512495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3271046438287773557, guid: 602ccec130b251d4c9c5fff1115837d1, type: 3}
@@ -33072,6 +33084,13 @@ Transform:
   - {fileID: 1710079505}
   - {fileID: 1800886271}
   - {fileID: 1302224534}
+  - {fileID: 1326869109}
+  - {fileID: 1883222399}
+  - {fileID: 1229604443}
+  - {fileID: 1106355017}
+  - {fileID: 2072548301}
+  - {fileID: 1931037378}
+  - {fileID: 230731393}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 185.946, y: 0, z: 0}
 --- !u!1 &2114283754330233424
@@ -33253,8 +33272,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1985908043103866372, guid: 8e3e52025251dc04cb5c93014a9228d6, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -33379,6 +33397,7 @@ MonoBehaviour:
   doorOpenTime: 3
   doorOpenSound: {fileID: 8300000, guid: a7a46655edb681147879b7107429f76e, type: 3}
   doorShutSound: {fileID: 8300000, guid: 31885ee7837c740449681079db8f5fa5, type: 3}
+  pickupCollectSound: {fileID: 8300000, guid: 66640ea0c7a104665b27f562d014d7cf, type: 3}
 --- !u!82 &5393215579111688479
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33784,10 +33803,3 @@ SceneRoots:
   - {fileID: 1743884109}
   - {fileID: 92790274}
   - {fileID: 1171206294}
-  - {fileID: 1326869109}
-  - {fileID: 1883222399}
-  - {fileID: 1229604443}
-  - {fileID: 1106355017}
-  - {fileID: 2072548301}
-  - {fileID: 1931037378}
-  - {fileID: 230731393}

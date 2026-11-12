@@ -20,6 +20,9 @@ public class PlayerCollisions : MonoBehaviour
 
     private bool doorIsOpen = false; // To determine current state of door
 
+    // Pickup sound
+    [SerializeField] private AudioClip pickupCollectSound; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -87,5 +90,18 @@ public class PlayerCollisions : MonoBehaviour
         // Set Animator parameter
         doorAnimator.SetBool("doorOpen", false);
         print("Door shut!");
+    }
+
+    // Pickup collection
+    void OnTriggerEnter(Collider coll)
+    {
+        if(coll.gameObject.CompareTag("pickup"))
+        {
+            PickupCollect.pickupAmount++;
+
+            audio.PlayOneShot(pickupCollectSound);
+
+            Destroy(coll.gameObject);
+        }
     }
 }
