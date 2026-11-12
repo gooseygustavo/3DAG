@@ -52,10 +52,12 @@ public class PlayerCollisions : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
          // Check if the player hits an object with the houseDoor tag
-        if(hit.gameObject.CompareTag("houseDoor"))
+        if(hit.gameObject.CompareTag("houseDoor") && PickupCollect.pickupAmount >= 4)
         {
           // print("Door hit");
           OpenDoor(); 
+         
+          PickupCollect.hud.enabled = false;
         }
     }
 
