@@ -52,7 +52,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5925039944357697573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_GlobalIlluminationLOD: 0
 --- !u!65 &6920214575631911936
 BoxCollider:
@@ -86,7 +86,6 @@ GameObject:
   - component: {fileID: 1681917985631138375}
   - component: {fileID: 585483544423890000}
   - component: {fileID: 5925039944357697573}
-  - component: {fileID: 7181528486191513666}
   m_Layer: 0
   m_Name: Rock_A
   m_TagString: Untagged
@@ -166,25 +165,3 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7181528486191513666
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7613749877382364278}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2649995349246831342, guid: 837b7a468446c644b890b8efae8cbfe5, type: 3}

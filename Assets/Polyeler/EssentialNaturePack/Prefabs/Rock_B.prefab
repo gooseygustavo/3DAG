@@ -165,7 +165,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 9046371682350474460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_GlobalIlluminationLOD: 0
 --- !u!65 &8809475761355266978
 BoxCollider:
