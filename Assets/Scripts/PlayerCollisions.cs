@@ -69,7 +69,7 @@ public class PlayerCollisions : MonoBehaviour
         {
             PickupCollect.hud.enabled = true;
 
-            TextHints.message = "This door needed power to open";
+            TextHints.message = "I can't go back here yet.";
 
             TextHints.textOn = true;
         }
